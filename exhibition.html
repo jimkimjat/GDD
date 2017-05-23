@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GDD</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="../style-projects-jquery.css" />    
+    
+    <!-- Arquivos utilizados pelo jQuery lightBox plugin -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+    <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->
+    
+    <!-- Ativando o jQuery lightBox plugin -->
+<script type="text/javascript">
+$(function() {
+        $('#gallery a').lightBox();
+    });
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<style type="text/css">
+	/* jQuery lightBox plugin - Gallery style */
+	#gallery {
+	background-color: #231F20;
+	width: 805px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery ul img {
+		border: 5px solid #3e3e3e;
+		border-width: 5px 5px 20px;
+	}
+	#gallery ul a:hover img {
+		border: 5px solid #fff;
+		border-width: 5px 5px 20px;
+		color: #fff;
+	}
+	#gallery ul a:hover { color: #fff; }
+	</style>
+<style type="text/css">
+body {
+	background-color: #DFDFDF;
+	background-image: url(images/bbgbg.png);
+	background-repeat: repeat-x;
+}
+.justfonts {
+	color: #BBB;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+.headerbutton {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.headerbutton th {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.headerbutton th {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.headerbutton th {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.headerbutton th {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.headerbutton th {
+	font-size: 10px;
+	color: #231F20;
+}
+bodycopy {
+	font-family: Verdana, Geneva, sans-serif;
+}
+body p {
+	font-size: 10px;
+}
+body p {
+	font-size: 12px;
+}
+body p {
+	font-family: Verdana, Geneva, sans-serif;
+}
+body p {
+	font-size: 10px;
+}
+.bodycopy {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #231F20;
+	font-weight: bold;
+}
+.bordersize {
+	font-size: 5px;
+}
+.bodycopy2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+headerbutton {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: oblique;
+	font-weight: bold;
+}
+a:link {
+	color: #231F20;
+	text-decoration: none;
+}
+a:visited {
+	color: #231F20;
+	text-decoration: none;
+}
+a:hover {
+	color: #777;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.footerbutton {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-style: oblique;
+	color: #BBB;
+}
+.justfontsbold {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #BBB;
+}
+.headline {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #BBB;
+}
+.headitalic {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #BBB;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('images/piefeaturedroll.jpg')">
+<table width="850" height="118" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th width="284" bgcolor="#FFFFFF" scope="col"><table width="70%" border="0" align="left" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><img src="images/logo.png" width="106" height="63" /></td>
+      </tr>
+    </table></th>
+    <th width="566" align="center" bgcolor="#FFFFFF" scope="col"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="56%">&nbsp;</td>
+            <td width="44%" align="left" class="justfonts">A CREATIVE DESIGNER'S PLATFORM</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="87%" height="45" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="45"><table width="100%" height="43" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="26" align="center" valign="bottom" class="bodycopy"><a href="index.html" class="headerbutton">Home</a></td>
+              <td align="center" valign="bottom" class="bodycopy"><a href="aboutus.html">About Us</a></td>
+              <td align="center" valign="bottom" class="bodycopy"><a href="exhibition.html">Exhibitions</a></td>
+              <td align="center" valign="bottom" class="bodycopy"><a href="members.html">Members</a></td>
+              <td align="center" valign="bottom" class="bodycopy"><a href="contactus.html">Contact Us</a></td>
+            </tr>
+          </table></td>
+        </tr>
+    </table></th>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th width="0" height="1" align="center" valign="middle" bgcolor="#EEEEEE" class="bordersize" scope="col">&nbsp;</th>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="45" bgcolor="#231F20" class="justfonts">&nbsp;</td>
+    <td width="805" height="25" bgcolor="#231F20" class="justfonts"> Current Exhibition : 1.<span class="justfontsbold"> Freestyle</span></td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#EEEEEE" class="bordersize">&nbsp;</td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="59%" align="right" valign="top"><table width="91%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="19" align="center" bgcolor="#231F20" class="justfontsbold">Exhibition Brief</td>
+          </tr>
+          <tr>
+            <td class="bodycopy">1. Freestyle</td>
+          </tr>
+          <tr>
+            <td class="bodycopy2">December 13, 2011</td>
+          </tr>
+          <tr>
+            <td> <p>Every few months we release a digital exhibition of art, photography and music. We decide on a theme for all of us to ponder, develop and work on, helping each other to create out best interpretations of that theme.<br />
+              <br />
+              Our current exhibition is 1. Freestyle. For our first exhibition, we have collected over 26 works from all of our artists. Our members have experimented with their mediums and produced a set of beautiful illustrations, photography and traditional mediums.<br />
+              <br />
+              This is the first exhibit to be launched in the new website we setup, thanks to the hard work and dedication of Fix, Thaq and Pie. As this exhibit is being released, people are already anticipating and enjoying these works and meeting some of the artists who created them.<br />
+             </p>
+              <p>Mohd Syafie is our featured artist this time around, producing awesome doodle and 3D illustrations. Capek Torres, Blur, Najib and many more created stunning graphic illustrations, while Fix and Pojan produced cool 2D vector work.<br />
+                </p>
+              <p>- Ajim Jimkimjat (GDD Staff) </p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="41%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="19">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"><a href="interviewpie.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('piefeature','','images/piefeaturedroll.jpg',1)"><img src="images/piefeatured.jpg" alt="Pie's Interview" name="piefeature" width="187" height="273" border="0" id="piefeature" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" class="bodycopy">Featured Artist</td>
+          </tr>
+          <tr>
+            <td align="center"><span class="bodycopy2">Mohd Syafie</span></td>
+          </tr>
+          <tr>
+            <td align="center"><span class="bodycopy2"><a href="interviewpie.html" class="bodycopy">(Read The Interview Here)</a></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#EEEEEE" class="bordersize">&nbsp;</td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="45" bgcolor="#231F20" class="justfonts">&nbsp;</td>
+    <td width="805" height="25" bgcolor="#231F20" class="justfontsbold"> Artworks</td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#EEEEEE" class="bordersize">&nbsp;</td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="10%">&nbsp;</td>
+            <td width="90%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="footerbutton">Illustrations</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><div id="gallery">
+    <ul>
+        <li>
+            <a href="images/exhibit1/2 copy.jpg" title="Truth by Ajim">
+                <img src="images/exhibit1/thumbs/2 copy.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li></li>
+        <li></li>
+        <li>
+            <a href="images/exhibit1/callerretouch.png" title="Caller by Ajim">
+                <img src="images/exhibit1/thumbs/callerretouch.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/DSC00786.JPG" title="Nganga by Capek">
+                <img src="images/exhibit1/thumbs/DSC00786.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/Grafik-hancock.jpg" title="Grafik Hancock by Paed">
+                <img src="images/exhibit1/thumbs/Grafik-hancock.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/IMG_00001.jpg" title="Fireworks by Najib">
+                <img src="images/exhibit1/thumbs/IMG_00001.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/IMG_7685.JPG" title="Orang Tua by Capek">
+                <img src="images/exhibit1/thumbs/IMG_7685.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/mat moto final.jpg" title="Mat Moto by Pojan">
+                <img src="images/exhibit1/thumbs/mat moto final.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/nyai yai illustration.jpg" title="Parents by Pojan">
+                <img src="images/exhibit1/thumbs/nyai yai illustration.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/pangggg.jpg" title="Candles by Ajim">
+                <img src="images/exhibit1/thumbs/pangggg.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li></li>
+        <li>
+            <a href="images/exhibit1/pehal copycopy.jpg" title="Where I Put My Soul by Ajim">
+                <img src="images/exhibit1/thumbs/pehal copycopy.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li></li>
+        <li>
+<a href="images/exhibit1/poster.jpg" title="Steeth by Blur">
+                <img src="images/exhibit1/thumbs/poster.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li></li>
+        <li></li>
+          <li>
+            <a href="images/exhibit1/avatar.png" title="Avatar 6.0 by Fix">
+                <img src="images/exhibit1/thumbs/avatar.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+          <li>
+            <a href="images/exhibit1/owl.png" title="Owl Robot by Fix">
+                <img src="images/exhibit1/thumbs/owl.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/IMG copy.jpg" title="Steam by Pie">
+                <img src="images/exhibit1/thumbs/IMG copy.jpg" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/doodle.png" title="Doodle by Pie">
+                <img src="images/exhibit1/thumbs/doodle.png" width="100" height="100" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="images/exhibit1/monster.png" title="Monster by Fix">
+                <img src="images/exhibit1/thumbs/monster.png" width="100" height="100" alt="" />
+                
+            </a>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="footerbutton">3-Dimensional</td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table>
+        </li>
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="images/exhibit1/3d animation.jpg" title="3D by Pae"><img src="images/exhibit1/thumbs/3d animation.png" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/port 4.jpg" title="Wonderland by Pojan"><img src="images/exhibit1/thumbs/port 4.png" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/port7.jpg" title="Cryptic Castle by Pojan"><img src="images/exhibit1/thumbs/port7.png" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/Untitled-1.jpg" title="Tandas Kampung by Pie"><img src="images/exhibit1/thumbs/Untitled-1.jpg" width="100" height="100" alt="" /></a>
+                <a href="images/exhibit1/puki.jpg" title="Twins by Ajim"><img src="images/exhibit1/thumbs/puki.jpg" width="100" height="100" alt="" /></a>
+                </td>
+      </tr>
+    </table></td>
+  </tr>
+</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="footerbutton">Photography</td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table>
+        
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="images/exhibit1/DASDF.jpg" title="Lights by Thaq"><img src="images/exhibit1/thumbs/DASDF.jpg" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/DSC_0180.jpg" title="Serene Sound by Thaq"><img src="images/exhibit1/thumbs/DSC_0180.jpg" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/edittt.jpg" title="Search by Ajim"><img src="images/exhibit1/thumbs/edittt.jpg" width="100" height="100" alt="" /> </a>
+        <a href="images/exhibit1/DSC_8062.jpg" title="Yellow Bits by Thaq"><img src="images/exhibit1/thumbs/DSC_8062.jpg" width="100" height="100" alt="" /></a>
+        <a href="images/exhibit1/DSC_8125.jpg" title="Fly Me Butter by Thaq"><img src="images/exhibit1/thumbs/DSC_8125.jpg" width="100" height="100" alt="" /></a>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+    </ul>
+</div>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20">&nbsp;
+    </td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#EEEEEE" class="bordersize">&nbsp;</td>
+  </tr>
+</table>
+
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20" class="bordersize">&nbsp;   </td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="88" height="99" align="center" bgcolor="#EEEEEE"><img src="images/logouitm.png" width="24" height="29" border="0" usemap="#Map" /></td>
+    <td width="88" align="center" bgcolor="#EEEEEE" class="footerbutton"><a href="index.html">Home</a></td>
+    <td width="88" align="center" bgcolor="#EEEEEE" class="footerbutton"><a href="aboutus.html">About Us</a></td>
+    <td width="88" align="center" bgcolor="#EEEEEE" class="footerbutton"><a href="exhibition.html">Exhibitions</a></td>
+    <td width="88" align="center" bgcolor="#EEEEEE" class="footerbutton"><a href="members.html">Members</a></td>
+    <td width="117" align="center" bgcolor="#EEEEEE" class="footerbutton"><a href="contactus.html">Contact Us</a></td>
+    <td width="293" align="center" bgcolor="#EEEEEE" class="justfonts">Copyright 2011 GDD.org  All Rights Reserved®</td>
+  </tr>
+</table>
+<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#231F20" class="bordersize">&nbsp;</td>
+  </tr>
+</table>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="-10,-12,34,39" href="http://www.uitm.edu.my" target="_new" />
+</map>
+
+</body>
+</html>
